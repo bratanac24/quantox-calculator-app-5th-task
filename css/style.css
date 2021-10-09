@@ -1,0 +1,209 @@
+.attribution {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header span {
+  font-size: 12px;
+}
+header .picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .enum {
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px;
+}
+header .enum span {
+  flex: auto;
+  text-align: center;
+}
+header .theme-picker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .theme-picker > span {
+  align-self: flex-end;
+  margin: 5px 20px;
+}
+header .slider {
+  flex: auto;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+header .ball {
+  height: 16px;
+  width: 16px;
+  margin: 1px;
+  border-radius: 50%;
+}
+header h3 {
+  align-self: flex-end;
+}
+
+.display {
+  display: flex;
+  justify-content: end;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#screen-io {
+  background-color: #fff0;
+  border: 0;
+  font-size: 48px;
+  width: 100%;
+  outline: none;
+  caret-color: #fff0;
+  text-align: end;
+  font-family: "Spartan";
+  margin: 30px;
+  padding: 0;
+}
+
+.numpad {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.numpad-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.bottom {
+  padding: 0 10px;
+}
+
+.btn {
+  margin: 10px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 32px;
+  border-radius: 10px;
+}
+.btn span {
+  margin: 15px;
+}
+
+.func {
+  font-size: 20px;
+}
+
+.wide {
+  flex: auto;
+}
+
+body {
+  font-family: "Spartan";
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+body[theme=dark] {
+  color: #fff;
+}
+body[theme=dark] .slider {
+  background-color: #242d44;
+  justify-content: start;
+}
+body[theme=dark] .ball {
+  background-color: #d03f2f;
+}
+body[theme=dark] .attribution a {
+  text-decoration: none;
+  color: #fff;
+}
+body[theme=dark] .attribution a:hover {
+  color: #242d44;
+}
+body[theme=dark] .display {
+  background-color: #181f33;
+}
+body[theme=dark] #screen-io {
+  color: #fff;
+}
+body[theme=dark] .numpad {
+  background-color: #242d44;
+}
+body[theme=dark] .btn {
+  background-color: #eae3dc;
+  color: #434a59;
+  box-shadow: inset 0px -4px 0px #b3a497;
+}
+body[theme=dark] .btn:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+body[theme=dark] .func {
+  background-color: #647198;
+  box-shadow: inset 0px -4px 0px #414e73;
+  color: #fff;
+}
+body[theme=dark] .func:hover {
+  background-color: #a2b2e1;
+}
+body[theme=dark] .orange {
+  background-color: #d03f2f;
+  box-shadow: inset 0px -4px 0px #873901;
+  color: #fff;
+  font-size: 20px;
+}
+body[theme=dark] .orange:hover {
+  background-color: #f96b5b;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  width: 540px;
+}
+
+h3 {
+  font-size: 35px;
+  margin: 0%;
+}
+
+h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+body {
+  background-color: #3a4663;
+}
+
+/*# sourceMappingURL=style.css.map */

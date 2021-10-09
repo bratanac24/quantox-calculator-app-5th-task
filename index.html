@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
     <!-- displays site properly based on user's device -->
 
     <link
@@ -11,13 +14,102 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style></style>
   </head>
-  <body>
-    <div class="attribution">Coded by <a href="#">Your Name Here</a>.</div>
+  <body theme="dark">
+    <div class="attribution">Coded by <a href="https://www.instagram.com/bratanac24">Aleksandar Radovic</a>.</div>
+    <main>
+      <header>
+        <h3>calc</h3>
+        <div class="theme-picker">
+          <span>THEME</span>
+          <div class="picker">
+            <div class="enum">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="slider">
+              <div class="ball"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="display">
+        <span class="old"></span>
+        <input id="screen-io" type="text" value="0">
+      </section>
+      <section class="numpad">
+        <div class="numpad-row">
+          <div class="btn">
+            <span>7</span>
+          </div>
+          <div class="btn">
+            <span>8</span>
+          </div>
+          <div class="btn">
+            <span>9</span>
+          </div>
+          <div class="btn func">
+            <span>DEL</span>
+          </div>
+        </div>
+        <div class="numpad-row">
+          <div class="btn">
+            <span>4</span>
+          </div>
+          <div class="btn">
+            <span>5</span>
+          </div>
+          <div class="btn">
+            <span>6</span>
+          </div>
+          <div class="btn">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="numpad-row">
+          <div class="btn">
+            <span>1</span>
+          </div>
+          <div class="btn">
+            <span>2</span>
+          </div>
+          <div class="btn">
+            <span>3</span>
+          </div>
+          <div class="btn">
+            <span>-</span>
+          </div>
+        </div>
+        <div class="numpad-row">
+          <div class="btn">
+            <span>.</span>
+          </div>
+          <div class="btn">
+            <span>0</span>
+          </div>
+          <div class="btn">
+            <span>/</span>
+          </div>
+          <div class="btn">
+            <span>x</span>
+          </div>
+        </div>
+        <div class="numpad-row bottom">
+          <div class="btn wide func">
+            <span>RESET</span>
+          </div>
+          <div class="btn wide orange">
+            <span>=</span>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

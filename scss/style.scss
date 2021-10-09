@@ -1,0 +1,18 @@
+//functions
+@use "mixins/mixins";
+
+//themes
+@use "global/palette";
+
+//components
+@use "components/credits";
+@use "components/header";
+@use "components/display";
+@use "components/numpad";
+@use "components/button";
+//main
+@use "project/main";
+
+body {
+  background-color: #3a4663;
+}

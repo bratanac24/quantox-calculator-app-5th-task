@@ -1,0 +1,51 @@
+@use "../global/palette" as p;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  span {
+    font-size: 12px;
+  }
+  .picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .enum {
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    span {
+      flex: auto;
+      text-align: center;
+    }
+  }
+  .theme-picker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .theme-picker > span {
+    align-self: flex-end;
+    margin: 5px 20px;
+  }
+  .slider {
+    flex: auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  .ball {
+    height: 16px;
+    width: 16px;
+    margin: 1px;
+    border-radius: 50%;
+  }
+  h3 {
+    align-self: flex-end;
+  }
+}
