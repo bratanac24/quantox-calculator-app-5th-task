@@ -42,74 +42,76 @@
       </header>
       <section class="display">
         <span class="old"></span>
-        <input id="screen-io" type="text" value="0">
+        <input id="screen-io" type="text" value="0" pattern="[0-9+*/]{3,20}">
       </section>
       <section class="numpad">
         <div class="numpad-row">
-          <div class="btn">
+          <div class="btn num">
             <span>7</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>8</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>9</span>
           </div>
-          <div class="btn func">
+          <div id="delete" class="btn func">
             <span>DEL</span>
           </div>
         </div>
         <div class="numpad-row">
-          <div class="btn">
+          <div class="btn num">
             <span>4</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>5</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>6</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>+</span>
           </div>
         </div>
         <div class="numpad-row">
-          <div class="btn">
+          <div class="btn num">
             <span>1</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>2</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>3</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>-</span>
           </div>
         </div>
         <div class="numpad-row">
-          <div class="btn">
+          <div class="btn num">
             <span>.</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>0</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>/</span>
           </div>
-          <div class="btn">
+          <div class="btn num">
             <span>x</span>
           </div>
         </div>
         <div class="numpad-row bottom">
-          <div class="btn wide func">
+          <div id="reset" class="btn wide func">
             <span>RESET</span>
           </div>
-          <div class="btn wide orange">
+          <div id="equals" class="btn wide orange">
             <span>=</span>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="./app/app.js"></script>
   </body>
 </html>
