@@ -101,7 +101,7 @@ let solveCalc = () => {
 
 let numpadInput = () =>{
     numpad = document.getElementById("numpad");
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', (e) =>{
         e = e || window.event;
         var target = e.target || e.srcElement,
             text = target.innerText; 
@@ -117,6 +117,17 @@ let numpadInput = () =>{
 
 }
 
+let changeTheme = () =>{
+    let slider = document.getElementById("slider");
+    slider.addEventListener("click",()=>{
+        theme=document.getElementsByTagName("body");
+        themeColor =  theme[0].getAttribute("theme")
+        if(themeColor == "dark") theme[0].setAttribute("theme","light");
+        if(themeColor == "light") theme[0].setAttribute("theme","negative");
+        if(themeColor == "negative") theme[0].setAttribute("theme","dark");
+    })
+}
+
 console.log("Nothing to see here :)");
 initialInput();
 numpadInput()
@@ -124,3 +135,4 @@ inputCheck();
 solveCalc();
 deleteCalc();
 resetCalc();
+changeTheme();

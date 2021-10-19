@@ -2,7 +2,6 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #fff;
   text-decoration: none;
 }
 
@@ -187,12 +186,120 @@ body[theme=dark] .func:hover {
 }
 body[theme=dark] .orange {
   background-color: #d03f2f;
-  box-shadow: inset 0px -4px 0px #873901;
+  box-shadow: inset 0px -4px 0px #93261a;
   color: #fff;
   font-size: 20px;
 }
 body[theme=dark] .orange:hover {
   background-color: #f96b5b;
+}
+
+body[theme=light] {
+  color: #36362c;
+  background-color: #e6e6e6;
+}
+body[theme=light] .slider {
+  background-color: #d2cdcd;
+  justify-content: center;
+}
+body[theme=light] .ball {
+  background-color: #c85402;
+}
+body[theme=light] .attribution a {
+  text-decoration: none;
+  color: #36362c;
+}
+body[theme=light] .attribution a:hover {
+  color: #d2cdcd;
+}
+body[theme=light] .display {
+  background-color: #eeeeee;
+}
+body[theme=light] #screen-io {
+  color: #36362c;
+}
+body[theme=light] .numpad {
+  background-color: #d2cdcd;
+}
+body[theme=light] .btn {
+  background-color: #e5e4e1;
+  color: #434a59;
+  box-shadow: inset 0px -4px 0px #a79e91;
+}
+body[theme=light] .btn:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+body[theme=light] .func {
+  background-color: #378187;
+  box-shadow: inset 0px -4px 0px #1b6066;
+  color: #fff;
+}
+body[theme=light] .func:hover {
+  background-color: #62b5bc;
+}
+body[theme=light] .orange {
+  background-color: #c85402;
+  box-shadow: inset 0px -4px 0px #873901;
+  color: #fff;
+  font-size: 20px;
+}
+body[theme=light] .orange:hover {
+  background-color: #ff8a38;
+}
+
+body[theme=negative] {
+  color: #ffe53d;
+  background-color: #17062a;
+}
+body[theme=negative] .slider {
+  background-color: #1e0936;
+  justify-content: end;
+}
+body[theme=negative] .ball {
+  background-color: #00ded0;
+}
+body[theme=negative] .attribution a {
+  text-decoration: none;
+  color: #ffe53d;
+}
+body[theme=negative] .attribution a:hover {
+  color: #1e0936;
+}
+body[theme=negative] .display {
+  background-color: #1e0936;
+}
+body[theme=negative] #screen-io {
+  color: #ffe53d;
+}
+body[theme=negative] .numpad {
+  background-color: #1e0936;
+}
+body[theme=negative] .btn {
+  background-color: #331c4d;
+  color: #ffe53d;
+  box-shadow: inset 0px -4px 0px #881c9e;
+}
+body[theme=negative] .btn:hover {
+  background-color: #6c34ac;
+  cursor: pointer;
+}
+body[theme=negative] .func {
+  background-color: #56077c;
+  box-shadow: inset 0px -4px 0px #be15f4;
+  color: #fff;
+}
+body[theme=negative] .func:hover {
+  background-color: #8631af;
+}
+body[theme=negative] .orange {
+  background-color: #00ded0;
+  box-shadow: inset 0px -4px 0px #6cf9f1;
+  color: #000;
+  font-size: 20px;
+}
+body[theme=negative] .orange:hover {
+  background-color: #93fff8;
 }
 
 html {
