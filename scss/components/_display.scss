@@ -17,3 +17,10 @@
   margin: 30px;
   padding: 0;
 }
+
+@media screen and (max-width: 600px) {
+  #screen-io {
+    font-size: 32px;
+    margin: 20px 30px;
+  }
+}
