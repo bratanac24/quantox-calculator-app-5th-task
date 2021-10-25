@@ -1,0 +1,199 @@
+@use "../mixins/mixins";
+@use "../global/palette" as p;
+
+body {
+  font-family: "Spartan";
+  margin: 0;
+  @include mixins.flexCenter(column);
+  width: 100%;
+  height: 100vh;
+}
+body[theme="dark"] {
+  color: p.$white;
+  .slider {
+    background-color: p.$dark-calculator-face;
+    justify-content: start;
+  }
+  .ball {
+    background-color: p.$dark-orange;
+  }
+  .attribution {
+    a {
+      text-decoration: none;
+      color: p.$white;
+    }
+    a:hover {
+      color: p.$dark-calculator-face;
+    }
+  }
+  .display {
+    background-color: p.$dark-display;
+  }
+  #screen-io {
+    color: p.$white;
+  }
+  .numpad {
+    background-color: p.$dark-calculator-face;
+  }
+  .btn {
+    background-color: p.$dark-num-btn;
+    color: p.$dark-num;
+    box-shadow: inset 0px -4px 0px p.$dark-num-shadow;
+    &:hover {
+      background-color: p.$white;
+      cursor: pointer;
+    }
+  }
+  .func {
+    background-color: p.$dark-func-btn;
+    box-shadow: inset 0px -4px 0px p.$dark-func-shadow;
+    color: p.$white;
+    &:hover {
+      background-color: p.$dark-func-hover;
+    }
+  }
+  .orange {
+    background-color: p.$dark-orange;
+    box-shadow: inset 0px -4px 0px p.$dark-orange-shadow;
+    color: p.$white;
+    font-size: 20px;
+    &:hover {
+      background-color: p.$dark-orange-hover;
+    }
+  }
+}
+body[theme="light"] {
+  color: p.$light-num;
+  background-color: p.$light-bg;
+  .slider {
+    background-color: p.$light-calculator-face;
+    justify-content: center;
+  }
+  .ball {
+    background-color: p.$light-orange;
+  }
+  .attribution {
+    a {
+      text-decoration: none;
+      color: p.$light-num;
+    }
+    a:hover {
+      color: p.$light-calculator-face;
+    }
+  }
+  .display {
+    background-color: p.$light-display;
+  }
+  #screen-io {
+    color: p.$light-num;
+  }
+  .numpad {
+    background-color: p.$light-calculator-face;
+  }
+  .btn {
+    background-color: p.$light-num-btn;
+    color: p.$dark-num;
+    box-shadow: inset 0px -4px 0px p.$light-num-shadow;
+    &:hover {
+      background-color: p.$white;
+      cursor: pointer;
+    }
+  }
+  .func {
+    background-color: p.$light-func-btn;
+    box-shadow: inset 0px -4px 0px p.$light-func-shadow;
+    color: p.$white;
+    &:hover {
+      background-color: p.$light-func-hover;
+    }
+  }
+  .orange {
+    background-color: p.$light-orange;
+    box-shadow: inset 0px -4px 0px p.$light-orange-shadow;
+    color: p.$white;
+    font-size: 20px;
+    &:hover {
+      background-color: p.$light-orange-hover;
+    }
+  }
+}
+
+body[theme="negative"] {
+  color: p.$negative-num;
+  background-color: p.$negative-bg;
+  .slider {
+    background-color: p.$negative-calculator-face;
+    justify-content: end;
+  }
+  .ball {
+    background-color: p.$negative-orange;
+  }
+  .attribution {
+    a {
+      text-decoration: none;
+      color: p.$negative-num;
+    }
+    a:hover {
+      color: p.$negative-calculator-face;
+    }
+  }
+  .display {
+    background-color: p.$negative-display;
+  }
+  #screen-io {
+    color: p.$negative-num;
+  }
+  .numpad {
+    background-color: p.$negative-calculator-face;
+  }
+  .btn {
+    background-color: p.$negative-num-btn;
+    color: p.$negative-num;
+    box-shadow: inset 0px -4px 0px p.$negative-num-shadow;
+    &:hover {
+      background-color: p.$negative-num-hover;
+      cursor: pointer;
+    }
+  }
+
+  .func {
+    background-color: p.$negative-func-btn;
+    box-shadow: inset 0px -4px 0px p.$negative-func-shadow;
+    color: p.$white;
+    &:hover {
+      background-color: p.$negative-func-hover;
+    }
+  }
+  .orange {
+    background-color: p.$negative-orange;
+    box-shadow: inset 0px -4px 0px p.$negative-orange-shadow;
+    color: p.$black;
+    font-size: 20px;
+    &:hover {
+      background-color: p.$negative-orange-hover;
+    }
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+main {
+  width: 540px;
+}
+h3 {
+  font-size: 35px;
+  margin: 0%;
+}
+
+h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 10px;
+    width: 90%;
+  }
+}
