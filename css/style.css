@@ -35,6 +35,7 @@ header .enum {
 header .enum span {
   flex: auto;
   text-align: center;
+  position: relative;
 }
 header .theme-picker {
   display: flex;
@@ -60,6 +61,15 @@ header .ball {
 }
 header h3 {
   align-self: flex-end;
+}
+header #setDarkTheme,
+header #setLightTheme,
+header #setNegTheme {
+  position: absolute;
+  z-index: 10000;
+  width: 100%;
+  height: 50px;
+  margin-top: -20px;
 }
 
 .display {

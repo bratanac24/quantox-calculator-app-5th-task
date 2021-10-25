@@ -109,15 +109,24 @@ let numpadInput = () =>{
             //console.log(text);
             if((target.className == "btn num") || target.parentElement.className == "btn num"){
                 display = document.getElementById("screen-io");
-                if((display.value==0) || display.value == "I can't solve this :(") display.value = "";
+                
+                if((display.value==0) || display.value == "I can't solve this :("){
+                    if(text=="."){
+                        display.value = "0";  
+                    } 
+                }
                 display.value += text;
+
+                
+                
+                
             } 
         
     }, false);
 
 }
 
-let changeTheme = () =>{
+/*let changeTheme = () =>{
     let slider = document.getElementById("slider");
     slider.addEventListener("click",()=>{
         theme=document.getElementsByTagName("body");
@@ -126,13 +135,47 @@ let changeTheme = () =>{
         if(themeColor == "light") theme[0].setAttribute("theme","negative");
         if(themeColor == "negative") theme[0].setAttribute("theme","dark");
     })
+}*/
+
+let whiteTheme = () =>{
+    let slider = document.getElementById("setLightTheme");
+    slider.addEventListener("click",()=>{
+        theme=document.getElementsByTagName("body");
+        theme[0].setAttribute("theme","light");
+        console.log("Light");
+
+    })
+}
+let darkTheme = () =>{
+    let slider = document.getElementById("setDarkTheme");
+    slider.addEventListener("click",()=>{
+        theme=document.getElementsByTagName("body");
+        theme[0].setAttribute("theme","dark");
+        console.log("Dark");
+    })
 }
 
+let negTheme = () =>{
+    let slider = document.getElementById("setNegTheme");
+    slider.addEventListener("click",()=>{
+        theme=document.getElementsByTagName("body");
+        theme[0].setAttribute("theme","negative");
+        console.log("Negative");
+
+    })
+}
 console.log("Nothing to see here :)");
+
+//themes
+whiteTheme();
+darkTheme();
+negTheme();
+
+
 initialInput();
 numpadInput()
 inputCheck();
 solveCalc();
 deleteCalc();
 resetCalc();
-changeTheme();
+//changeTheme();
